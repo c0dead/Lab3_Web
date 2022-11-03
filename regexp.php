@@ -14,4 +14,5 @@ $regexp2 = '/[0-9]/';
 // $matches[1] is the match for the first subpattern enclosed in '(...)' and so on
 // преобразуем строку так, чтобы вместо чисел стояли их кубы
 $result = preg_replace_callback($regexp2, function ($matches) { return $matches[0]**3; }, $str2);
+
 echo $result;
